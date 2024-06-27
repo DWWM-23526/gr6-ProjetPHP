@@ -50,15 +50,24 @@
     $sql = "INSERT INTO `film`(`Titre`,`Description`,`Date_de_sortie`,`Durée`,`Note`) VALUES ('unfilm', 'il est bien', '80', '3')
     $requete = db->query($sql);
     */
+    /* supprimer une série $sql = 'DELETE FROM `série`  WHERE Id_Série > 27' 
+    $requete = db->query($sql)
+    savoir combien de lignes ont été supprimées : 
+    echo $requete->rowCount();*/
 
-    echo"<pre>";
-
-    var_dump($série);
-
-    echo"</pre>";
+    
     
     ?>
+    <?php foreach($série as $séries) :  
+    ?>
+    <div id="<?php echo $séries[key($séries)]; ?>">
+    <h1 ><?php echo $séries['Titre']; ?> 
+               </h1>
+    <p> <?php echo $séries['Description']; ?> </p>
+    <p> <?php echo $séries['Note'] ?></p>
+    <p><?php echo $séries['Date_de_sortie'] ?></p>
+    </div>
+    <?php endforeach ?>
 
-    
 </body>
 </html>
