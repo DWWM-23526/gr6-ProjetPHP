@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/serie.css">
 </head>
 <body>
     <h1> Tous vos films ici !</h1>
+    <section id="séries" class="flexsérie">
     <?php /*
     Générer des noms de films de la DB
     Les mettre en rang avec flex css
@@ -25,7 +27,7 @@
 
     try{
         $db = new PDO($dsn, DBUSER, DBPASS);
-        echo"meandeboisloggedin";
+        /*echo"meandeboisloggedin"*/;
 
         // on s'assure de la compatibilité
         $db->exec("SET NAMES utf8");
@@ -61,13 +63,15 @@
     <?php foreach($série as $séries) :  
     ?>
     <div id="<?php echo $séries[key($séries)]; ?>">
-    <h1 ><?php echo $séries['Titre']; ?> 
+    <h1 class="Titre"><?php echo $séries['Titre']; ?> 
                </h1>
-    <p> <?php echo $séries['Description']; ?> </p>
-    <p> <?php echo $séries['Note'] ?></p>
-    <p><?php echo $séries['Date_de_sortie'] ?></p>
+    <p class="Description"> <?php echo $séries['Description']; ?> </p>
+    <p class="Note"> <?php echo $séries['Note'] ?></p>
+    <p class="Datedesortie"><?php echo $séries['Date_de_sortie'] ?></p>
     </div>
     <?php endforeach ?>
+    </section>
+    
 
 </body>
 </html>

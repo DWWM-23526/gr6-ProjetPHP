@@ -1,0 +1,42 @@
+.flexsérie {
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 5em;    
+    
+    margin-left: 20em;
+    border: 3px black;
+    padding:none;
+
+}
+.Titre {
+    margin:1em;
+    padding:none;
+    border: none;
+
+}
+
+.Description{
+    margin:1em;
+    padding:none;
+    border: none;
+
+
+}
+
+.Note {
+    margin:1em;
+    padding:none;
+    border: none;
+
+}
+.Datedesortie{
+    margin:1em;
+    padding:none;
+    border: none;
+
+
+}
