@@ -8,14 +8,16 @@
     margin: 5em;    
     
     margin-left: 20em;
-    border: 3px black;
-    padding:none;
+    border: 2px solid black;
+    padding:0;
     background-color: rgba(255,216,0,255);
+    justify-content: space-between;
+    
 
 }
 .Titre {
     margin:1em;
-    padding:none;
+    padding:0;
     border: none;
     color: white;
 
@@ -23,7 +25,7 @@
 
 .Description{
     margin:1em;
-    padding:none;
+    padding:0;
     border: none;
     color: white;
 
@@ -32,14 +34,14 @@
 
 .Note {
     margin:1em;
-    padding:none;
+    padding:0;
     border: none;
     color: white;
 
 }
 .Datedesortie{
     margin:1em;
-    padding:none;
+    padding:0;
     border: none;
     color: white;
 
@@ -50,11 +52,26 @@
 
     text-align: center;
     padding-top: 20%;
-    color: hsl(0, 0%, 20%);
+    color: white;
 }
 body {
 
     background-color: hsl(0, 0%, 20%);
+}
+div {
+    border: 3px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 20%)
+}
+.flexsérie::after {
+    content: "";
+    flex: auto;
+    
 }
 
 /*jaune rgba(255,216,0,255)
