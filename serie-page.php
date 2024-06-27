@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/serie.css">
 </head>
 <body>
-    <h1 class="accroche"> Tous vos films ici !</h1>
+    <h1 class="accroche"> Tous vos Séries ici !</h1>
     <section id="séries" class="flexsérie">
     <?php /*
     Générer des noms de films de la DB

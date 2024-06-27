@@ -10,12 +10,14 @@
     margin-left: 20em;
     border: 3px black;
     padding:none;
+    background-color: rgba(255,216,0,255);
 
 }
 .Titre {
     margin:1em;
     padding:none;
     border: none;
+    color: white;
 
 }
 
@@ -23,6 +25,7 @@
     margin:1em;
     padding:none;
     border: none;
+    color: white;
 
 
 }
@@ -31,12 +34,14 @@
     margin:1em;
     padding:none;
     border: none;
+    color: white;
 
 }
 .Datedesortie{
     margin:1em;
     padding:none;
     border: none;
+    color: white;
 
 
 }
@@ -45,4 +50,12 @@
 
     text-align: center;
     padding-top: 20%;
+    color: hsl(0, 0%, 20%);
 }
+body {
+
+    background-color: hsl(0, 0%, 20%);
+}
+
+/*jaune rgba(255,216,0,255)
+gris hsl(0, 0%, 20%)*/
