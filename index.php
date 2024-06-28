@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<?php
-$page = $_SERVER['PHP_SELF'];
-$sec = "1";
-?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,41 +9,24 @@ $sec = "1";
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'" -->
 </head>
 <body>
     <?php
         include 'src/components/lp_carousel/carte-descript.php';
     ?>
     <!-- header -->
-    <span><a class="btn btn-danger" href="src\components\lp_carousel\carte-descript.php">Carte</a></span>
+    <!-- <span><a class="btn btn-danger" href="src\components\lp_carousel\carte-descript.php">Carte</a></span> -->
     <!-- <span><a class="btn btn-danger" href="src\components\lp_carousel\php-config.php">Php-config</a></span> -->
     <div class="wrapper bg-dark">
-        <section class="container legendary fs-1 bg-success">
-            <h4>Films pour Tous les Temps !</h4>
-            <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>  
+        <section class="container pt-4 bg-success">
+                <h4>Films pour Tous les Temps !</h4>
+                <div class="horizontal-scrollbar overflow-auto">
+                    <?php
+                        createBestOld($filmLegnd);
+                    ?>
+            </div>
         </section>    
-        <section class="container bg-warning pb-5">
+        <section class="container bg-warning py-5">
                 <h3>Découvrez les films et les séries les plus populaires, les nouveatés et les prochains sorties</h3>
                 <div class="container row">
                     <div class="content-text p-4 col">

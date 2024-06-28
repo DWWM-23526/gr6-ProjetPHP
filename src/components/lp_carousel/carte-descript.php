@@ -1,6 +1,10 @@
 <?php
   include 'php-config.php';
 
+  $sql0 = "SELECT Titre FROM `film` WHERE Note BETWEEN '8' and '10' AND YEAR(Date_de_sortie) = 2023 LIMIT 10";
+  $requete0 = $db->query($sql0);
+  $filmLegnd = $requete0->fetchAll();
+
   $sql1 = "SELECT Titre FROM `film` ORDER BY `film`.`Note` DESC LIMIT 10";
   $requete1 = $db->query($sql1);
   $filmTop = $requete1->fetchAll();
@@ -24,6 +28,17 @@
   $sql6 = "SELECT Titre, Date_de_sortie, Description, Note FROM `série` ORDER BY `série`.`Note` DESC LIMIT 10";
   $requete6 = $db->query($sql6);
   $seriePlus = $requete6->fetchAll();
+
+function createBestOld($filmLegnd){
+
+  foreach ($filmLegnd as $titre){
+    echo
+      '<div class="item text-center">' .
+        '<img src="src/images/picture_grey.svg" class="card-img-top" alt="...">' .
+        htmlspecialchars($titre['Titre']) . 
+      '</div>';
+  }
+}
 
 function createTop10Film($filmTop){
 
@@ -67,7 +82,6 @@ function createNouvSerie($serieNouv){
        '</div>';
   }
 }
-
 
 function createFilmPlus($filmPlus){
 
