@@ -29,7 +29,7 @@
         <section class="container bg-warning py-5">
                 <h3>Découvrez les films et les séries les plus populaires, les nouveatés et les prochains sorties</h3>
                 <div class="container row">
-                    <div class="content-text p-4 col">
+                    <div class="content-text mt-2 p-4 col">
                         <h5>Top 10 des films de la semaine</h5>
                         <p>Découvrez les films les plus populaires de la semaine</p>
                     </div>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="container row">
-                    <div class="content-text p-4 col">
+                    <div class="content-text mt-2 p-4 col">
                         <h5>Nouveaux films</h5>
                         <p>Découvrez les derniers films sorties</p>
                     </div>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="container row">
-                    <div class="content-text p-4 col">
+                    <div class="content-text mt-2 p-4 col">
                         <h5>Top 10 des séries de la semaine</h5>
                         <p>Découvrez les séries les plus populaires de la semaine</p>
                     </div>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="container row">
-                    <div class="content-text p-4 col">
+                    <div class="content-text mt-2 p-4 col">
                         <h5>Nouvelles séries</h5>
                         <p>Découvrez les dernières séries sorties</p>
                     </div>
