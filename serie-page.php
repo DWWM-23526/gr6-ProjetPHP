@@ -73,5 +73,30 @@
     </section>
     
 
+        <?php /* 
+        Ajouter la pagination pour avoir vingt pages dans un form
+        Celui de Theo pour exemple: 
+        
+        <div class="pagination">
+        <form action="" method="GET">
+            <label for="page">Sélectionnez une page :</label>
+            <select name="page" id="page" onchange="this.form.submit()">
+                <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                    <option value="<?php echo $i; ?>" <?php if ($i == $page) echo 'selected'; ?>>Page <?php echo $i; ?></option>
+                <?php endfor; ?>
+            </select>
+        </form>
+    </div>
+
+    Ajouter des boutons pour ordonner chaque paramètre (date ascendante, note descendente, etc)
+    Faire des media queries avec les breakpoints de Yassin;
+
+
+
+        
+        
+        */?>
+    
+
 </body>
 </html>
