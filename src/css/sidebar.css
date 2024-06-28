@@ -1,0 +1,87 @@
+main .sidebar {
+    background: hsl(0, 0%, 99%);
+    border-right: 1px solid hsl(0, 0%, 75%);
+    color: hsl(0, 0%, 20%);
+    min-height: 90vh;
+    width: 250px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .sidebar div h2 {
+    margin-left: 50px;
+}
+
+main .sidebar .categories , main .sidebar .genres {
+    position: relative;
+}
+
+main .sidebar .categories span , main .sidebar .genres span {
+    margin-left: 30px;
+    padding: 7px;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 10;
+}
+
+main .sidebar div img {
+    position: absolute;
+    height: 30px;
+    width: auto;
+    left: 15px;
+    top: 18px;
+}
+
+main .sidebar span a:link , main .sidebar span a:visited , main .sidebar span a:active {
+    text-decoration: none;
+    color: hsl(0, 0%, 20%);
+    font-weight: 600;
+}
+
+main .sidebar span a:hover {
+    text-decoration: none;
+    color: rgba(255,216,0,255);
+    transition: 0.2 ease-in-out;
+    font-weight: 600;
+}
+
+main .sidebar span a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: hsl(0, 0%, 20%);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    visibility: hidden;
+}
+    
+main .sidebar span a:hover::before {
+    visibility: visible;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+    main .sidebar {
+        width: 225px;
+    }
+
+    main .sidebar .categories span , main .sidebar .genres span {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main .sidebar {
+        width: 180px;
+    }
+
+    main .sidebar .categories span , main .sidebar .genres span {
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
+}
