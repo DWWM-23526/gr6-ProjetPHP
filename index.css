@@ -3,68 +3,9 @@
     font-weight: 300;
     height: 100% !important;
 }
-.legendary{
-    height: 200px !important;
+.section__top{
+    height: 30vh !important;
 }
-
 .rounder{
     border-radius: 80px;
-}
-    
-.info-plus {
-    height: 50vh;
-}
-
-.info-plus img{
-    position: relative;
-    width: 300px;
-    left: 170px;
-    top: 50px;
-}
-
-.info-plus .item-body{
-    position: relative;
-    left: 550px;
-    top: -200px;
-}
-
-.container {
-}
-
-.horizontal-scrollbar{
-    display: flex;
-}
-
-.horizontal-scrollbar .item{
-}
-
-
-.horizontal-scrollbar .item img{
-    width: 205px;
-}
-
-
-.active {
-
-}
-.carousel .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-}
-.carousel-item img {
-
-}
-.carousel-control-prev-icon {
-}
-.visually-hidden {
-}
-.carousel-control-next {
-}
-.carousel-control-next-icon {
-}
-.main {
-}
-
-.content-text {
 }
