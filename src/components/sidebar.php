@@ -16,21 +16,27 @@
 
         <?php
 
-            require_once './src/components/connect.php';
+            
 
-            $sql = "SELECT * FROM `genre` Limit 20 ";
+            
+            
 
-            $requete = $db->query($sql);
-        
-            $genres = $requete->fetchAll();
+           
 
 
-            foreach ($genres as $genre): 
+            
         ?>
+        
+  
+            
+              <?php foreach ($genres as $genre): ?>
+        
+         
         <span><a href='#'><?php echo $genre['Nom'] ?></a></span>
         <br><br>
         <?php endforeach; ?>
+        
 
     </div>
 </nav>
-<div class="app">
+<div class="app"></div>

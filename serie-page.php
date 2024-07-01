@@ -1,61 +1,22 @@
-<!DOCTYPE html>
-<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Document</title>
     <link rel="stylesheet" href="/css/serie.css">
 </head>
 <body>
+<?php require 'src/components/header.php';
+     
+     
+     require 'src\components\lp_carousel\db-demand.php';
+     require 'src/components/sidebar.php'; 
+     
+     
+   ?>;
     <h1 class="accroche"> Tous vos Séries ici !</h1>
     <section id="séries" class="flexsérie">
-    <?php /*
-    Générer des noms de films de la DB
-    Les mettre en rang avec flex css
-    Colorer police etc
-    afficher     */
-
-    define("DBHOST", "localhost");
-    define("DBUSER", "root");
-    define("DBPASS", "");
-    define("DBNAME", "sitefilm");
-
-    // DSN DE CONNEXION
-    $dsn = "mysql:dbname=".DBNAME.";host=".DBHOST;
-
-    // connexion => base de donnée 
-
-    try{
-        $db = new PDO($dsn, DBUSER, DBPASS);
-        /*echo"meandeboisloggedin"*/;
-
-        // on s'assure de la compatibilité
-        $db->exec("SET NAMES utf8");
-
-        // le fetch par défaut est défini ici, pour cette page j'ai choisi FETCH_ASSOC car j'ai besoin de tout
-        $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
-    }
-    catch(PDOException $e) {
-
-        die("Erreur:".$e->getMessage());
-    }
-
-    // maintenant on récupère des données
-    $sql = "SELECT Titre, Description, Date_de_sortie, Note, Date_de_sortie FROM `série` LIMIT 26";
-
-    $requete = $db->query($sql);
+    <?php 
     
-    // fetch ou fetchall
-    $série = $requete->fetchAll(PDO::FETCH_ASSOC);
-    /* Pour ajouter un film (different pour JSON)
-    $sql = "INSERT INTO `film`(`Titre`,`Description`,`Date_de_sortie`,`Durée`,`Note`) VALUES ('unfilm', 'il est bien', '80', '3')
-    $requete = db->query($sql);
-    */
-    /* supprimer une série $sql = 'DELETE FROM `série`  WHERE Id_Série > 27' 
-    $requete = db->query($sql)
-    savoir combien de lignes ont été supprimées : 
-    echo $requete->rowCount();*/
 
     
     
@@ -73,29 +34,8 @@
     </section>
     
 
-        <?php /* 
-        Ajouter la pagination pour avoir vingt pages dans un form
-        Celui de Theo pour exemple: 
-        
-        <div class="pagination">
-        <form action="" method="GET">
-            <label for="page">Sélectionnez une page :</label>
-            <select name="page" id="page" onchange="this.form.submit()">
-                <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-                    <option value="<?php echo $i; ?>" <?php if ($i == $page) echo 'selected'; ?>>Page <?php echo $i; ?></option>
-                <?php endfor; ?>
-            </select>
-        </form>
-    </div>
-
-    Ajouter des boutons pour ordonner chaque paramètre (date ascendante, note descendente, etc)
-    Faire des media queries avec les breakpoints de Yassin;
-
-
-
-        
-        
-        */?>
+        <?php 
+        require 'src/components/footer.php';?>
     
 
 </body>
