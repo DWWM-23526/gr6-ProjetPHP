@@ -111,6 +111,7 @@ header .container .search-bar .search-bar-button img:hover {
 }
 
 main {
+    display: flex;
     margin-top: 150px;
 }
 
