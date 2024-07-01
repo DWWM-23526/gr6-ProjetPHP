@@ -34,20 +34,3 @@
     </div>
 </nav>
 <div class="app">
-    oooo
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus odit placeat rerum dolorum rem aliquid amet a, nisi, dicta, reiciendis pariatur? Repellendus adipisci pariatur nisi quos cumque! Nesciunt, cum.
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, similique incidunt possimus modi suscipit, qui error in sapiente architecto cumque officia fugit odit molestias quod minima deleniti soluta expedita dolor?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, mollitia velit doloremque similique nam enim hic modi et in tenetur vel explicabo cupiditate earum voluptatum exercitationem optio dolorum alias necessitatibus?
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis magni totam dicta aspernatur dolorum aliquid, ut molestiae eos ullam fugit nesciunt eaque explicabo ipsam accusantium, itaque quaerat harum iure inventore.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus odit placeat rerum dolorum rem aliquid amet a, nisi, dicta, reiciendis pariatur? Repellendus adipisci pariatur nisi quos cumque! Nesciunt, cum.
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, similique incidunt possimus modi suscipit, qui error in sapiente architecto cumque officia fugit odit molestias quod minima deleniti soluta expedita dolor?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, mollitia velit doloremque similique nam enim hic modi et in tenetur vel explicabo cupiditate earum voluptatum exercitationem optio dolorum alias necessitatibus?
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis magni totam dicta aspernatur dolorum aliquid, ut molestiae eos ullam fugit nesciunt eaque explicabo ipsam accusantium, itaque quaerat harum iure inventore.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus odit placeat rerum dolorum rem aliquid amet a, nisi, dicta, reiciendis pariatur? Repellendus adipisci pariatur nisi quos cumque! Nesciunt, cum.
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, similique incidunt possimus modi suscipit, qui error in sapiente architecto cumque officia fugit odit molestias quod minima deleniti soluta expedita dolor?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, mollitia velit doloremque similique nam enim hic modi et in tenetur vel explicabo cupiditate earum voluptatum exercitationem optio dolorum alias necessitatibus?
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis magni totam dicta aspernatur dolorum aliquid, ut molestiae eos ullam fugit nesciunt eaque explicabo ipsam accusantium, itaque quaerat harum iure inventore.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus odit placeat rerum dolorum rem aliquid amet a, nisi, dicta, reiciendis pariatur? Repellendus adipisci pariatur nisi quos cumque! Nesciunt, cum.
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, similique incidunt possimus modi suscipit, qui error in sapiente architecto cumque officia fugit odit molestias quod minima deleniti soluta expedita dolor?
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, mollitia velit doloremque similique nam enim hic modi et in tenetur vel explicabo cupiditate earum voluptatum exercitationem optio dolorum alias necessitatibus?
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis magni totam dicta aspernatur dolorum aliquid, ut molestiae eos ullam fugit nesciunt eaque explicabo ipsam accusantium, itaque quaerat harum iure inventore.
