@@ -16,7 +16,7 @@
 
         <?php
 
-            require_once './src/components/connect.php';
+            // require_once './src/components/connect.php';
 
             $sql = "SELECT * FROM `genre` Limit 20 ";
 
@@ -33,4 +33,3 @@
 
     </div>
 </nav>
-<div class="app">

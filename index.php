@@ -1,30 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php $title = 'Films&Séries - Tous les infos sur le site'; ?>
-    <title><?= $title ?? 'Accueil' ?></title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="src/components/lp_carousel/carousel.scss">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-</head>
 <?php
-    // require 'src/components/header.php';
-    // require 'src/components/sidebar.php';
-    // require 'src/components/footer.php';
+    $titre = 'Films&Séries - Accueil';
     require 'src/components/lp_carousel/carouselFunc.php';
 ?>
-<body>
-    <!-- header -->
-    <!-- <span><a class="btn btn-danger" href="src\components\lp_carousel\carte-descript.php">Carte</a></span> -->
-    <!-- <span><a class="btn btn-danger" href="src\components\lp_carousel\php-config.php">Php-config</a></span> -->
+<?php
+    require 'src/components/header.php';
+    require 'src/components/sidebar.php';
+?>
     <div class="wrapper bg-dark">
-        <section class="container section__top pt-4 bg-success">
+        <section class="section__top p-4 bg-success">
                 <h4>Films pour Tous les Temps !</h4>
                 <div class="carousel custom-carousel">
                     <div class="inner-container inner-g">
@@ -34,10 +17,10 @@
                     </div>
                 </div>
         </section>    
-        <section class="container bg-warning py-5">
+        <section class="bg-warning p-4">
                 <h3>Découvrez les films et les séries les plus populaires, les nouveatés et les prochains sorties</h3>
-                <div class="container row">
-                    <div class="content-text mt-2 p-4 col">
+                <div class=" row">
+                    <div class="content-text mt-2 p-5 col">
                         <h5>Top 10 des films de la semaine</h5>
                         <p>Découvrez les films les plus populaires de la semaine</p>
                     </div>
@@ -51,8 +34,8 @@
                         </div> 
                     </div>
                 </div>
-                <div class="container row">
-                    <div class="content-text mt-2 p-4 col">
+                <div class="row">
+                    <div class="content-text mt-2 p-5 col">
                         <h5>Nouveaux films</h5>
                         <p>Découvrez les derniers films sorties</p>
                     </div>
@@ -66,7 +49,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="container bg-danger rounder p-5">
+                <div class="bg-danger rounder p-5">
                 <div id="carouselExampleIndicators" class="carousel info-plus slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -95,8 +78,8 @@
                     </button>
                     </div>
                 </div>
-                <div class="container row">
-                    <div class="content-text mt-2 p-4 col">
+                <div class="row">
+                    <div class="content-text mt-2 p-5 col">
                         <h5>Top 10 des séries de la semaine</h5>
                         <p>Découvrez les séries les plus populaires de la semaine</p>
                     </div>
@@ -110,8 +93,8 @@
                         </div> 
                     </div>
                 </div>
-                <div class="container row">
-                    <div class="content-text mt-2 p-4 col">
+                <div class="row">
+                    <div class="content-text mt-2 p-5 col">
                         <h5>Nouvelles séries</h5>
                         <p>Découvrez les dernières séries sorties</p>
                     </div>
@@ -125,7 +108,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="container bg-danger rounder p-5">
+                <div class="bg-danger rounder p-5">
                 <div id="carouselExampleIndicators2" class="carousel info-plus slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -156,8 +139,5 @@
                 </div>
         </section>
     </div>
-    <!-- footer -->
-    <script src="src/components/lp_carousel/carousInteract.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
-</html>
+<?php require 'src/components/footer.php'; ?>
+
