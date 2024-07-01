@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 </head>
 <?php
+    // require 'src/components/header.php';
+    // require 'src/components/sidebar.php';
+    // require 'src/components/footer.php';
     require 'src/components/lp_carousel/carouselFunc.php';
 ?>
 <body>
