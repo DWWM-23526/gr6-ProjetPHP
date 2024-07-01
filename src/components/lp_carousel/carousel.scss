@@ -35,7 +35,6 @@
 }
 .inner-g{
     gap: 10px;
-
     .item{
         margin: 0;
     }
@@ -53,14 +52,12 @@
 }
 .info-plus {
     height: 50vh;
-
     img{
         position: relative;
-    width: 300px;
-    left: 170px;
-    top: 50px;
+        width: 300px;
+        left: 170px;
+        top: 50px;
     }
-
     .item-body{
         position: relative;
         left: 550px;
