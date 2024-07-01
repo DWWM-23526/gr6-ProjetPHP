@@ -1,0 +1,325 @@
+footer {
+    height: 330px;
+    background: hsl(0, 0%, 20%);
+    border-top: 1px solid hsl(0, 0%, 75%);
+    margin-left: -10px;
+    margin-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    height: 100%;
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .container .footer-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-100px);
+}
+
+footer .container .footer-info .footer-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+footer .container .footer-info .footer-socials .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .footer-info .footer-socials .socials .social {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+footer .container .footer-info .footer-socials .socials .social:hover {
+    cursor: pointer;
+    border: 3px solid rgba(255,216,0,255);
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .footer-info .footer-socials .socials .social .social-icon {
+    height: 50px;
+    width: 50px;
+}
+
+
+footer .container .footer-info .footer-socials .socials .social .x-icon {
+    height: 40px;
+    width: 40px;
+}
+
+footer .container .footer-info .footer-socials .socials .social .instagram-icon {
+    height: 60px;
+    width: 60px;
+}
+
+footer .container .footer-info .footer-socials .socials .social .tiktok-icon {
+    height: 40px;
+    width: 40px;
+}
+
+footer .container .footer-info .footer-links {
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+footer .container .footer-info .footer-links a:link {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container .footer-info .footer-links a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container .footer-info .footer-links a:active {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container .footer-info .footer-links a:hover {
+    text-decoration: none;
+    color: rgba(255,216,0,255);
+}
+
+footer .container .footer-info .footer-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100px);
+    margin-top: 1rem;
+}
+
+footer .container .footer-info .footer-apps .apps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container .footer-info .footer-apps .apps .app {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+footer .container .footer-info .footer-apps .apps .app:hover {
+    cursor: pointer;
+    border: 3px solid rgba(255,216,0,255);
+    transition: 0.3s ease-in-out;
+}
+
+footer .container .footer-info .footer-apps .apps .app .app-icon {
+    height: 40px;
+    width: 40px;
+}
+
+footer .container .footer-info .footer-apps .apps .app .android-icon {
+    height: 60px;
+    width: 60px;
+}
+
+footer .container .footer-logo {
+    margin: 2rem;
+}
+
+footer .container .footer-logo img{
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+
+    footer {
+        font-size: 0.8rem;
+        height: 250px;
+    }
+
+    footer .container {
+        transform: translateX(25px);
+    }
+
+    footer .container .footer-info .footer-socials .socials .social {
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        margin-right: 0.25rem;
+    }
+
+    footer .container .footer-info .footer-socials .socials .social:hover {
+        border: 2px solid rgba(255,216,0,255);
+    }
+    
+    footer .container .footer-info .footer-socials .socials .social .social-icon {
+        height: 35px;
+        width: 35px;
+    }
+    
+    
+    footer .container .footer-info .footer-socials .socials .social .x-icon {
+        height: 28px;
+        width: 28px;
+    }
+    
+    footer .container .footer-info .footer-socials .socials .social .instagram-icon {
+        height: 35px;
+        width: 35px;
+    }
+    
+    footer .container .footer-info .footer-socials .socials .social .tiktok-icon {
+        height: 28px;
+        width: 28px;
+    }
+
+    footer .container .footer-info .footer-links {
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    footer .container .footer-info .footer-apps {
+        transform: translateX(65px);
+    }
+
+    footer .container .footer-info .footer-apps .apps .app {
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        margin-right: 0.25rem;
+    }
+    
+    footer .container .footer-info .footer-apps .apps .app:hover {
+        border: 2px solid rgba(255,216,0,255);
+    }
+    
+    footer .container .footer-info .footer-apps .apps .app .app-icon {
+        height: 28px;
+        width: 28px;
+    }
+    
+    footer .container .footer-info .footer-apps .apps .app .android-icon {
+        height: 40px;
+        width: 40px;
+    }
+
+    footer .container .footer-logo {
+        margin: 1rem;
+    }
+    
+    footer .container .footer-logo img{
+        height: 65px;
+        transform: translateX(-25px);
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    footer {
+        font-size: 0.65rem;
+        height: 210px;
+    }
+
+    footer .container {
+        transform: translateX(70px);
+    }
+
+    footer .container .footer-info .footer-socials .socials .social {
+        height: 30px;
+        width: 30px;
+        margin-right: 0.2rem;
+    }
+    
+    footer .container .footer-info .footer-socials .socials .social .social-icon {
+        height: 25px;
+        width: 25px;
+    }
+    
+    
+    footer .container .footer-info .footer-socials .socials .social .x-icon {
+        height: 20px;
+        width: 20px;
+    }
+    
+    footer .container .footer-info .footer-socials .socials .social .instagram-icon {
+        height: 25px;
+        width: 25px;
+    }
+    
+    footer .container .footer-info .footer-socials .socials .social .tiktok-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    footer .container .footer-info .footer-links {
+        margin-top: 0.8rem;
+        margin-bottom: -0.8rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    footer .container .footer-info .footer-apps {
+        transform: translateX(45px);
+    }
+
+    footer .container .footer-info .footer-apps .apps .app {
+        height: 30px;
+        width: 30px;
+        margin-right: 0.2rem;
+    }
+
+    footer .container .footer-info .footer-apps .apps .app .app-icon {
+        height: 20px;
+        width: 20px;
+    }
+    
+    footer .container .footer-info .footer-apps .apps .app .android-icon {
+        height: 30px;
+        width: 43px;
+    }
+
+    footer .container .footer-logo {
+        margin: 0.8rem;
+    }
+    
+    footer .container .footer-logo img{
+        height: 45px;
+        transform: translateX(-40px);
+    }
+    
+}
