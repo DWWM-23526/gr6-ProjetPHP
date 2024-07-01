@@ -58,7 +58,7 @@ body {
 
     background-color: hsl(0, 0%, 20%);
 }
-div {
+.helloworld {
     border: 3px solid black;
     display:flex;
     flex-wrap: wrap;
@@ -73,6 +73,13 @@ div {
     flex: auto;
     
 }
+
+h1 {
+
+    padding: 0!important;
+    display: none!important;
+}
+
 
 /*jaune rgba(255,216,0,255)
 gris hsl(0, 0%, 20%)*/

@@ -65,9 +65,7 @@ main .sidebar span a:hover::before {
     transition: 0.2s ease-in-out;
 }
 
-main .app {
-    margin: 1rem;
-}
+
 
 @media (max-width: 1200px) {
     main .sidebar {

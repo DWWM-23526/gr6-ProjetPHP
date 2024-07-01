@@ -2,7 +2,12 @@
 <head>
     
     <title>Document</title>
+    
+    <link rel="stylesheet" href="src\css\footer.css">
+    <link rel="stylesheet" href="src\components\header.php">
+    <link rel="stylesheet" href="src\components\sidebar.php">
     <link rel="stylesheet" href="/css/serie.css">
+
 </head>
 <body>
 <?php require 'src/components/header.php';
@@ -23,7 +28,7 @@
     ?>
     <?php foreach($série as $séries) :  
     ?>
-    <div id="<?php echo $séries[key($séries)]; ?>">
+    <div id=" <?php echo $séries[key($séries)]; ?>" class="helloworld">
     <h1 class="Titre"><?php echo $séries['Titre']; ?> 
                </h1>
     <p class="Description"> <?php echo $séries['Description']; ?> </p>

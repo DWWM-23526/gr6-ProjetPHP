@@ -39,4 +39,3 @@
 
     </div>
 </nav>
-<div class="app"></div>
