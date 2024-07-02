@@ -13,11 +13,22 @@
   
   
   
-  $série = $db->query("SELECT Titre, Description, Date_de_sortie, Note, Date_de_sortie FROM `série` LIMIT 26")->fetchAll();
+  $limit = 27;
+$offset = isset($_POST['offset']) ? intval($_POST['offset']) : 0;
+
+
+$totalSeries = $db->query("SELECT COUNT(*) as count FROM `série`")->fetchColumn();
+$totalPages = ceil($totalSeries / $limit);
+
+
+$currentPage = ($offset / $limit) + 1;
+
+
+$série = $db->query("SELECT Titre, Description, Date_de_sortie, Note FROM `série` LIMIT $offset, $limit")->fetchAll(PDO::FETCH_ASSOC);
+
 
   // Components 
 
 
      
      $genres = $db->query("SELECT * FROM `genre` Limit 20")->fetchAll();
-?>

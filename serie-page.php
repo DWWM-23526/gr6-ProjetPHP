@@ -36,7 +36,19 @@
     <p class="Datedesortie"><?php echo $séries['Date_de_sortie'] ?></p>
     </div>
     <?php endforeach ?>
+    <form method="POST" action="" id="loadMoreForm" class="helloworld">
+        <input type="hidden" name="offset" value="<?php echo $offset; ?>">
+        <label for="pageSelect">Page <?php echo $currentPage; ?> of <?php echo $totalPages; ?>:</label>
+        <select name="offset" id="pageSelect" onchange="document.getElementById('loadMoreForm').submit()">
+            <?php for($i = 0; $i < $totalPages; $i++): ?>
+                <option value="<?php echo $i * $limit; ?>" <?php if($i + 1 == $currentPage) echo 'selected'; ?>>Page <?php echo $i + 1; ?></option>
+            <?php endfor; ?>
+        </select>
+    </form>
+    </form>
     </section>
+    
+    
     
 
         <?php 
