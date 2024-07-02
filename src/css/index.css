@@ -5,8 +5,25 @@
     width: 100%;
 }
 .section__top{
+    background-color: rgba(255,216,0,255);
     height: 30vh !important;
 }
+.section__top h3{
+    font-size: 30px;
+    margin-bottom: 0.7rem;
+}
+
+.section__mid{
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+.section__mid h3{
+    font-size: 40px;
+}
+
 .rounder{
+    background-color: rgba(255,216,30,255);
+    color: black;
     border-radius: 80px;
+    margin-bottom: 2rem;
 }
