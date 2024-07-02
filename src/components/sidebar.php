@@ -4,9 +4,9 @@
             Catégories
         </h2>
         <img src="./src/images/svg/categories.svg" alt="categories-icon">
-        <span><a href="#">Films</a></span>
+        <span><a href="./film-page.php">Films</a></span>
         <br><br>
-        <span><a href="#">Séries</a></span>
+        <span><a href="./serie-page.php">Séries</a></span>
     </div>
     <div class="genres">
         <h2>
@@ -29,7 +29,9 @@
         ?>
         <span><a href='#'><?php echo $genre['Nom'] ?></a></span>
         <br><br>
-        <?php endforeach; ?>
+        <?php endforeach; 
+            $db = null;
+        ?>
 
     </div>
 </nav>
