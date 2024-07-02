@@ -6,9 +6,9 @@
     require 'src/components/header.php';
     require 'src/components/sidebar.php';
 ?>
-    <div class="wrapper bg-dark">
-        <section class="section__top p-4 bg-success">
-                <h4>Films pour Tous les Temps !</h4>
+    <div class="wrapper">
+        <section class="section__top p-4">
+                <h3>Films pour Tous les Temps !</h3>
                 <div class="carousel custom-carousel">
                     <div class="inner-container inner-g">
                         <?php
@@ -17,8 +17,8 @@
                     </div>
                 </div>
         </section>    
-        <section class="bg-warning p-4">
-                <h3>Découvrez les films et les séries les plus populaires, les nouveatés et les prochains sorties</h3>
+        <section class="section__mid p-4">
+                <h3>Découvrez les films et les séries les plus populaires, les nouveautés et les prochains sorties</h3>
                 <div class=" row">
                     <div class="content-text mt-2 p-5 col">
                         <h5>Top 10 des films de la semaine</h5>
@@ -49,7 +49,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="bg-danger rounder p-5">
+                <div class="rounder p-5">
                 <div id="carouselExampleIndicators" class="carousel info-plus slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -108,7 +108,7 @@
                         </div> 
                     </div>
                 </div>
-                <div class="bg-danger rounder p-5">
+                <div class="rounder p-5">
                 <div id="carouselExampleIndicators2" class="carousel info-plus slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
