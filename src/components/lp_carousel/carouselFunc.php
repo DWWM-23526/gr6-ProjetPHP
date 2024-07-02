@@ -1,6 +1,6 @@
 <?php
 
-require 'db-demand.php';
+
 function createBestOld($filmLegnd){
   
     foreach ($filmLegnd as $titre){
