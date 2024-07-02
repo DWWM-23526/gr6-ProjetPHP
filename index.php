@@ -1,9 +1,12 @@
 <?php
     $titre = 'Films&Séries - Accueil';
-    require 'src/components/lp_carousel/carouselFunc.php';
+    
 ?>
 <?php
+    require 'src/components/configs/db.config.php';
+    require 'src/components/lp_carousel/db-demand.php';
     require 'src/components/header.php';
+    require 'src/components/lp_carousel/carouselFunc.php';
     require 'src/components/sidebar.php';
 ?>
     <div class="wrapper">

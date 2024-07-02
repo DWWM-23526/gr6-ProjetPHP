@@ -16,8 +16,6 @@
 
         <?php
 
-            // require_once './src/components/connect.php';
-
             $sql = "SELECT * FROM `genre` Limit 20 ";
 
             $requete = $db->query($sql);
