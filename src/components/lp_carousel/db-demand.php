@@ -22,9 +22,25 @@ $totalPages = ceil($totalSeries / $limit);
 
 
 $currentPage = ($offset / $limit) + 1;
-
-
 $série = $db->query("SELECT Titre, Description, Date_de_sortie, Note FROM `série` LIMIT $offset, $limit")->fetchAll(PDO::FETCH_ASSOC);
+
+// Requêtes et variables episodes à déclarer ici !
+
+
+$limit = 27;
+$offset = isset($_POST['offset']) ? intval($_POST['offset']) : 0;
+
+
+$totalEpisodes = $db->query("SELECT COUNT(*) as count FROM `episode`")->fetchColumn();
+$totalPages = ceil($totalSeries / $limit);
+
+
+$currentPage = ($offset / $limit) + 1;
+$episode = $db->query("SELECT Titre, Description, Durée, Numéro_de_saison, Numéro_d_épisode, Note FROM `episode` LIMIT $offset, $limit")->fetchAll(PDO::FETCH_ASSOC);
+
+
+
+
 
 
   // Components 
