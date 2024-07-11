@@ -3,11 +3,12 @@
     
 ?>
 <?php
-    require 'src/components/configs/db.config.php';
-    require 'src/components/lp_carousel/db-demand.php';
-    require 'src/components/header.php';
-    require 'src/components/lp_carousel/carouselFunc.php';
-    require 'src/components/sidebar.php';
+    require './configs/db.config.php';
+    
+    require 'views/partials/lp_carousel/db-demand.php';
+    require 'views/partials/header.php';
+    require 'views/partials/lp_carousel/carouselFunc.php';
+    require 'views/partials/sidebar.php';
 ?>
     <div class="wrapper">
         <section class="section__top p-4">
