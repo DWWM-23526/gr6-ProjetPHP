@@ -6,7 +6,7 @@ function createBestOld($filmLegnd){
     foreach ($filmLegnd as $titre){
       echo
         '<div>' .
-          '<img src="src/images/picture_grey.svg" class="item" alt="...">' .
+          '<img src="images/picture_grey.svg" class="item" alt="...">' .
           '<div class="text-center item-titre">' . htmlspecialchars($titre['Titre']) . '</div>' .
         '</div>';
     }
@@ -18,7 +18,7 @@ function createBestOld($filmLegnd){
       echo
         '<div>' .
           '<span class="counter">' . $counter++ .'</span>' .
-          '<img src="src/images/picture_grey.svg" class="item" alt="...">' .
+          '<img src="images/picture_grey.svg" class="item" alt="...">' .
           '<div class="text-center item-titre">' . htmlspecialchars($titre['Titre']) . '</div>' .
         '</div>';
     }
@@ -27,7 +27,7 @@ function createBestOld($filmLegnd){
     foreach ($filmNouv as $titre){
       echo
         '<div>' .
-          '<img src="src/images/picture_grey.svg" class="item" alt="...">' .
+          '<img src="images/picture_grey.svg" class="item" alt="...">' .
           '<div class="text-center item-titre">' . htmlspecialchars($titre['Titre']) . '</div>' .
         '</div>';
     }
@@ -39,7 +39,7 @@ function createBestOld($filmLegnd){
       echo
         '<div>' .
           '<span class="counter">' . $counter++ .'</span>' .
-          '<img src="src/images/picture_grey.svg" class="item" alt="...">' .
+          '<img src="images/picture_grey.svg" class="item" alt="...">' .
           '<div class="text-center item-titre">' . htmlspecialchars($titre['Titre']) . '</div>' .
         '</div>';
     }
@@ -49,7 +49,7 @@ function createBestOld($filmLegnd){
     foreach ($serieNouv as $titre){
       echo
         '<div>' .
-          '<img src="src/images/picture_grey.svg" class="item" alt="...">' .
+          '<img src="images/picture_grey.svg" class="item" alt="...">' .
           '<div class="text-center item-titre">' . htmlspecialchars($titre['Titre']) . '</div>' .
         '</div>';
     }
@@ -60,7 +60,7 @@ function createBestOld($filmLegnd){
     foreach ($filmPlus as $infoPlus){
       echo
       '<div class="carousel-item' . $active . '">' .
-          '<img src="src/images/picture_grey.svg" class="card-img-top" alt="...">' .
+          '<img src="images/picture_grey.svg" class="card-img-top" alt="...">' .
         '<div class="item-body">' .
           '<h1>' . htmlspecialchars($infoPlus['Titre']) . '</h1>' .
           '<p>' . 'Sortie le: ' . htmlspecialchars($infoPlus['Date_de_sortie']) . '</p>' .
@@ -78,7 +78,7 @@ function createBestOld($filmLegnd){
     foreach ($seriePlus as $infoPlus){
       echo
       '<div class="carousel-item' . $active . '">' .
-          '<img src="src/images/picture_grey.svg" class="card-img-top" alt="...">' .
+          '<img src="images/picture_grey.svg" class="card-img-top" alt="...">' .
         '<div class="item-body">' .
           '<h1>' . htmlspecialchars($infoPlus['Titre']) . '</h1>' .
           '<p>' . 'Sortie le: ' . htmlspecialchars($infoPlus['Date_de_sortie']) . '</p>' .

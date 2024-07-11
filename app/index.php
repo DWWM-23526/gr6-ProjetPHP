@@ -1,21 +1,17 @@
 <?php
     $titre = 'Films&Séries - Accueil';
+    // include_once './views/partials/lp_carousel/carouselFunc.php';
+    include_once './views/partials/header.php';
     
 ?>
-<?php
-    require 'src/components/configs/db.config.php';
-    require 'src/components/lp_carousel/db-demand.php';
-    require 'src/components/header.php';
-    require 'src/components/lp_carousel/carouselFunc.php';
-    require 'src/components/sidebar.php';
-?>
+
     <div class="wrapper">
         <section class="section__top p-4">
                 <h3>Films pour Tous les Temps !</h3>
                 <div class="carousel custom-carousel">
                     <div class="inner-container inner-g">
                         <?php
-                            createBestOld($filmLegnd);
+                            // createBestOld($filmLegnd);
                         ?>
                     </div>
                 </div>
@@ -31,7 +27,7 @@
                         <div class="carousel custom-carousel">
                             <div class="inner-container">
                                 <?php
-                                    createTop10Film($filmTop);
+                                    // createTop10Film($filmTop);
                                 ?>
                             </div>
                         </div> 
@@ -46,7 +42,7 @@
                         <div class="carousel custom-carousel">
                             <div class="inner-container inner-g">
                                 <?php
-                                    createNouvFilm($filmNouv);
+                                    // createNouvFilm($filmNouv);
                                 ?>
                             </div>
                         </div> 
@@ -68,7 +64,7 @@
                     </div>
                     <div class="carousel-inner d-flex">
                         <?php
-                            createFilmPlus($filmPlus);
+                            // createFilmPlus($filmPlus);
                         ?>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -90,7 +86,7 @@
                         <div class="carousel custom-carousel">
                             <div class="inner-container">
                                 <?php
-                                    createTop10Serie($serieTop);
+                                    // createTop10Serie($serieTop);
                                 ?>
                             </div>
                         </div> 
@@ -105,7 +101,7 @@
                         <div class="carousel custom-carousel">
                             <div class="inner-container inner-g">
                                 <?php
-                                    createNouvSerie($serieNouv);
+                                    // createNouvSerie($serieNouv);
                                 ?>
                             </div>
                         </div> 
@@ -127,7 +123,7 @@
                     </div>
                     <div class="carousel-inner d-flex">
                         <?php
-                            createSeriePlus($seriePlus);
+                            // createSeriePlus($seriePlus);
                         ?>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
@@ -142,5 +138,5 @@
                 </div>
         </section>
     </div>
-<?php require 'src/components/footer.php'; ?>
+<?php include_once './views/partials/footer.php'; ?>
 
