@@ -26,26 +26,26 @@
             PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
         )
     );
-    $sql = "SELECT * FROM serie ORDER BY ? DESC LIMIT 24;";
+    $sql = "SELECT * FROM episode ORDER BY ? DESC LIMIT 24;";
     $stmt = $db->prepare($sql);
     $stmt->execute(['date_sortie']);
-    $series = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $episodes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <body>
     <div class="container-lg bg-light">
-        <?php include_once "navbar.php"; ?>
+      
         <main class="mt-5 pt-3 row">
-            <?php foreach($series as $serie){ ?>
+            <?php foreach($episodes as $episode){ ?>
                 <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
                     <div class="card mb-3" style="width: 18rem;">
                         
-                            alt="<?= $serie['titre']?>">
+                            alt="episode : <?= $episode['titre']?>">
                         <div class="card-body text-center">
-                            <h5 class="card-title"><?= $serie['titre'], $serie['note']?></h5>
+                            <h5 class="card-title"><?= $episode['titre'], $episode['note']?></h5>
                             <p class="card-text" style="text-align: justify;">
-                                <?= $serie['description']?>
+                                <?= $episode['description']?>
                             </p>
-                           <a href="serie.php?id=<?= $serie['id_serie'] ?>" class="btn btn-primary">Lire</a>
+                           <a href="episode.php?id=<?= $episode['id_episode'] ?>" class="btn btn-primary">Lire</a>
                         </div>
                     </div>
                 </div>

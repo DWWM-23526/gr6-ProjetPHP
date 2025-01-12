@@ -3,7 +3,7 @@
         <h2>
             Catégories
         </h2>
-        <img src="./src/images/svg/categories.svg" alt="categories-icon">
+        <img src="/src/images/svg/genres" alt="categories-icon">
         <span><a href="#">Films</a></span>
         <br><br>
         <span><a href="#">Séries</a></span>
@@ -12,11 +12,11 @@
         <h2>
             Genres
         </h2>
-        <img src="./src/images/svg/genres.svg" alt="genres-icon">
+        
 
         <?php
 
-            $sql = "SELECT * FROM `genre` Limit 20 ";
+            $sql = "SELECT * FROM `genre` Limit 4 ";
 
             $requete = $db->query($sql);
         
@@ -25,7 +25,7 @@
 
             foreach ($genres as $genre): 
         ?>
-        <span><a href='#'><?php echo $genre['Nom'] ?></a></span>
+        <span><a href='#'><?php echo $genre['nom'] ?></a></span>
         <br><br>
         <?php endforeach; ?>
 

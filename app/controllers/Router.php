@@ -20,7 +20,7 @@ class Router{
 
     }
 
-    public function start(){
+    public function start() {
         $action = $this->controllerInstance->actionName;
         $this->controllerInstance->{$action}();
     }

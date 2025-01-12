@@ -33,7 +33,7 @@
 ?>
 <body>
     <div class="container-lg bg-light">
-        <?php include_once "navbar.php"; ?>
+    
         <main class="mt-5 pt-3 row">
             <?php foreach($series as $serie){ ?>
                 <div class="col-12 col-md-6 col-lg-3 d-flex align-items-stretch justify-content-center">
